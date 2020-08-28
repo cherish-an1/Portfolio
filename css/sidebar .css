@@ -1,0 +1,92 @@
+
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 50px;
+  margin-top: 15px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #10c0cb;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.sidebutton2-hidemobile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0px;
+}
+.sidebutton2-hidemobile a {
+color: #10c6bb;
+margin: 30px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bolder;
+}
+.sidebutton2-hidemobile a:hover {
+  color: #10c0cb;
+  text-decoration: none;
+}
+#mysidebar {
+  display: none;
+}
+
+@media screen and (max-width: 700px ){
+  #mysidebar {
+    display: block;
+  }
+  .sidebuttons-hidemobile {
+    display: none;
+  }
+  .sidebar {
+      display: inline-block;
+  }
+}
+

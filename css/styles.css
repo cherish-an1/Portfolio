@@ -136,6 +136,15 @@ svg{
 .active svg{
   color: black;
 }
+.bottom-nav p {
+  color : var(--tertiary);
+  margin-top: -12px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.active p {
+  color: black;
+}
 
 .img-cont {
   text-align: center;
